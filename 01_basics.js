@@ -44,7 +44,9 @@ console.log(null == 0); // false
 console.log(null >= 0); // true
 
 /*
-The reason is that an equality check (==) and comparisons (>, <, >=, <=) work differently. Comparisons convert null to a number, treating it as 0. That’s why (line no. 44) null >= 0 is true and (line no. 42) null > 0 is false.
+The reason is that an equality check (==) and comparisons (>, <, >=, <=) work differently.
+Comparisons convert null to a number, treating it as 0. 
+That’s why (line no. 44) null >= 0 is true and (line no. 42) null > 0 is false.
 */
 
 console.log(undefined > 0); // false
