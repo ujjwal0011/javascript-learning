@@ -13,7 +13,7 @@ console.log(array_3d);                // [ 1, 2, 3, [ 4, 5 ], 6, 7, [ 8, 9, [ 10
 
 
 console.log(Array.isArray("Ujjwal"))  // false
-console.log(Array.from("Ujjwal"))     // [ 'U', 'j', 'j', 'w', 'a', 'l' ]
+console.log(Array.from("Ujjwal"))     // makes an array from the arguments [ 'U', 'j', 'j', 'w', 'a', 'l' ]
 console.log(Array.from({name: "Ujjwal"}))   // gives an empty array [] because we have to tell from keys or from values we have to make an array
 
 
