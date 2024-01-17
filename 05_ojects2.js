@@ -48,4 +48,4 @@ console.log(Object.keys(obj3));        // accessing keys ----------
 console.log(Object.values(obj3));    // accessing values ------------> datatype is Array
 console.log(Object.entries(obj3));  // accessing entries ----------
 
-console.log(obj3.hasOwnProperty('Jujutsu'));
+console.log(obj3.hasOwnProperty('Jujutsu'));  // true
