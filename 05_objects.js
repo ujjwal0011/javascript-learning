@@ -1,3 +1,5 @@
+// <----------------------------Object Literals ----------------------------->
+
 let sym = Symbol("Hello")
 let user = {
     Name: "Ujjwal",
@@ -20,7 +22,19 @@ console.log(user);
 // adding a function to an object
 
 user.greeting = function(){  
-    console.log(`Hello JS User, ${this.Name}`);  // for referencing same object, we use "this" keyword
+    console.log(`Hello JS User, ${this.Name}`);  // for referencing same object, we use this keyword
 }
 
 console.log(user.greeting());  // accessing a function from object
+
+
+// <----------------------------Object Singelton ---------------------------->
+
+// let newObj = new Object()    // another way to make a singleton object
+let newObj = {}
+newObj.name = "Ujjwal"
+newObj.age = 19
+newObj.year = 3
+
+console.log(newObj);
+
