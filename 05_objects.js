@@ -20,7 +20,7 @@ console.log(user);
 // adding a function to an object
 
 user.greeting = function(){  
-    console.log(`Hello JS User, ${this.Name}`);  // for referencing same object, we use this keyword
+    console.log(`Hello JS User, ${this.Name}`);  // for referencing same object, we use "this" keyword
 }
 
 console.log(user.greeting());  // accessing a function from object
