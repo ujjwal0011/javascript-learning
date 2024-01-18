@@ -49,3 +49,16 @@ console.log(Object.values(obj3));    // accessing values ------------> datatype 
 console.log(Object.entries(obj3));  // accessing entries ----------
 
 console.log(obj3.hasOwnProperty('Jujutsu'));  // true
+
+
+// object de-structure
+let films = {
+    Action: "Vikram",
+    Thriller: "Andhadhun",
+    Horror: "Tumbbad",
+    Comedy: "De Dana Dan"
+}
+
+let {Action: action} = films    // {Action: action} means giving another name to the keys if it is too long
+
+console.log(action);
