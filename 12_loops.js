@@ -14,3 +14,17 @@ for(let i = 0; i<=20; i++){
     }
     console.log(i);
 }
+
+
+// --------------------------- While loop ---------------------------------
+
+
+let myArray = ['Toji', "Yuji", "Megumi"]
+
+let arr = 0
+while (arr < myArray.length) {
+    console.log(`Value is ${myArray[arr]}`);
+    arr = arr + 1
+}
+
+
