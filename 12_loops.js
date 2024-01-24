@@ -49,6 +49,8 @@ do {
 
 // --------------------------- For of and For in ------------------------
 
+// for of is good for arrays and maps
+// for in is good for objects
 
 let newArr = [1, 2, 3, 4, 5]
 
@@ -74,5 +76,55 @@ for(const [key, value] of map){
     // console.log(`${key} => ${value}`);
 }
 
+let obj = {
+    Name: "Ujjwal",
+    Age: 19,
+    Nationality: "INDIAN"
+}
 
+for(const i in obj){
+    // console.log(`${i}: "${obj[i]}"`);
+}
+
+
+// --------------------------- For each -----------------------------------
+
+
+let arr2 = [2, 4, 6, 8, 10]
+
+arr2.forEach( function (val){   // normal function
+    // console.log(val);
+} )
+
+arr2.forEach( (val) => {        // arrow function
+    // console.log(val);
+})
+
+function printMe(val){          // we can give a normal funciton that we have defined, in the array. 
+                                //Ex- line no. 107
+    // console.log(val);
+}
+
+arr2.forEach(printMe)
+
+// printing values of objects which are inside of an array
+
+let obj2 = [
+    {
+        language: "JavaScript",
+        languageExtension: "js"
+    },
+    {
+        language: "Java",
+        languageExtension: "java"
+    },
+    {
+        language: "Python",
+        languageExtension: "py"
+    }
+] 
+
+obj2.forEach( (val) => {
+    console.log(val.languageExtension);
+} )
 
